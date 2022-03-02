@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cubit/misc/colors.dart';
 import 'package:flutter_cubit/widgets/app_large_text.dart';
+import 'package:flutter_cubit/widgets/app_text.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key}) : super(key: key);
@@ -68,7 +69,21 @@ class _DetailPageState extends State<DetailPage> {
                               AppLargeText(text: "\$ 250",color: AppColors.textColor1,),
 
                             ],
-                          )
+                          ),
+                          SizedBox(height: 30,),
+                          Row(
+                            children: [
+                              AppLargeText(text: "People",color: Colors.black38,)
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              AppText(text: "Number of people in your group",color: Colors.black38,),
+
+                            ],
+                          ),
+
+
                         ],
                       ),
                     ),
